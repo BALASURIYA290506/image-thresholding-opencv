@@ -59,9 +59,9 @@ Compare the results obtained from Global, Adaptive, and Otsu's thresholding meth
 
 ## Developed By
 
-**Name:** ASHWIN BAALAJI V K
+**Name:** M BALASURIYA
 
-**Register No:** 212225230026
+**Register No:** 212224240021
 
 
 ## PROGRAM
@@ -75,7 +75,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread("Downloads/WALT.jpg")
+img = cv2.imread("plane.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 plt.figure(figsize=(10, 5))
@@ -102,7 +102,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread("Downloads/WALT.jpg")
+img = cv2.imread("plane.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # Fixed threshold: pixels above 127 become 255 (white), the rest become 0 (black)
@@ -132,7 +132,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread("Downloads/WALT.jpg")
+img = cv2.imread("plane.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # Block size (11) must be odd. C (2) is subtracted from the local mean.
@@ -170,7 +170,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread("Downloads/WALT.jpg")
+img = cv2.imread("plane.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # Threshold value is ignored (0); Otsu's method calculates the best one automatically
@@ -197,7 +197,8 @@ plt.show()
 
 - The grayscale version of the input image is displayed.
 - Serves as the input for thresholding operations.
-<img width="1180" height="503" alt="Screenshot 2026-11-18 090813" src="https://github.com/user-attachments/assets/9119007b-ec55-4218-85dd-b75dbaeaa22c" />
+<img width="830" height="301" alt="image" src="https://github.com/user-attachments/assets/fea1e00d-0531-4fbc-af70-e474c775560c" />
+
 
 
 ### Global Thresholding
@@ -206,7 +207,8 @@ plt.show()
 - Thresholded image is displayed.
 - A fixed threshold value is used for segmentation.
 - Pixels are classified as foreground or background.
-<img width="1042" height="511" alt="Screenshot 2026-11-18 090819" src="https://github.com/user-attachments/assets/38c1c88a-48d8-4c03-99be-b292dc4ccaab" />
+<img width="810" height="288" alt="image" src="https://github.com/user-attachments/assets/8bba4a66-d491-4720-8857-6216800adfbf" />
+
 
 ### Adaptive Thresholding
 
@@ -215,7 +217,7 @@ plt.show()
 - Adaptive Gaussian Thresholded image is displayed.
 - Threshold values vary across different regions of the image.
 - Suitable for images with uneven illumination.
-<img width="1372" height="448" alt="Screenshot 2026-11-18 090830" src="https://github.com/user-attachments/assets/53a8ef96-a848-4564-a4ea-2a86f0c174d9" />
+<img width="1008" height="242" alt="image" src="https://github.com/user-attachments/assets/2e96a1d6-6d6d-497e-85cc-183fef269c47" />
 
 
 ### Otsu's Thresholding
@@ -224,7 +226,8 @@ plt.show()
 - Otsu segmented image is displayed.
 - Optimal threshold value is calculated automatically.
 - Produces improved segmentation for bimodal histograms.
-<img width="1030" height="495" alt="Screenshot 2026-11-18 090840" src="https://github.com/user-attachments/assets/322c4566-a230-4cf0-bc85-fab0050da52c" />
+<img width="821" height="327" alt="image" src="https://github.com/user-attachments/assets/95240598-a8fe-4ef6-890c-24a5967d8a90" />
+
 
 
 
